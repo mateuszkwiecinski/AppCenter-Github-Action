@@ -53,7 +53,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 1
     - name: set up JDK 1.8
       uses: actions/setup-java@v1
       with:
